@@ -1,8 +1,9 @@
 def cleanText(data_frame, column_name:str):
+	data_frame[column_name] = data_frame[column_name].str.replace('<br />', ' ')
 	data_frame[column_name] = data_frame[column_name].str.replace('[^\w\s]', '')
 	data_frame[column_name] = data_frame[column_name].str.replace('[0-9]', '')
 	data_frame[column_name] = data_frame[column_name].str.lower()
-
+	data_frame[column_name] = data_frame[column_name].str.replace('_', ' ')
 
 
 
