@@ -23,13 +23,13 @@ url       = {http://www.aclweb.org/anthology/P11-1015}
 
 ## EDA:
 When charting the top twenty most frequent uni-grams in the negative and positive distributions we discovered that  there were many similar words between the negative and positive sets. The words were also very general and not very informative. 
-![](Unigram_neg.png)
-![](Unigram_pos.png)
+![](/Visuals/Unigram_neg.png)
+![](/Visuals/Unigram_pos.png)
 We gained much more insight looking at the bigram and trigram frequencies for the positive and negative reviews. For example, if we consider genres, the bi/tri-grams become very telling and can be related to movie market data. In the positive reviews “kung fu movie”, “base true story”, and “give good performance” correspond with the top 3 genres of adventure, action, and drama, according to total box office numbers from 1995-2020 (https://www.the-numbers.com/market/genres). Kung Fu movies are action/adventure heavy while many dramas are often based on true stories and are very focused on inter and intra personal relationships (which require great acting to sell the believability to an audience). On the opposite end we see word groups like, “horror movie”, “main character”, “sci fi channel”, and “bad act bad”. Sci-Fi movies are not even on the list of top grossing genres while horror movies, although they rank sixth, can obviously be a polarizing genre (as they’re usually meant to shock and disturb viewers). The fact that main character and bad acting show up in the negative reviews also gives credence to peoples’ desire to see “quality” acting which is often associated with dramas (just take a cursory glance at the genres of films that won Academy Awards for best actor). 
-![](Bigram_neg.png)
-![](Bigram_pos.png)
-![](Trigram_neg.png)
-![](Trigram_pos.png)
+![](/Visuals/Bigram_neg.png)
+![](/Visuals/Bigram_pos.png)
+![](/Visuals/Trigram_neg.png)
+![](/Visuals/Trigram_pos.png)
 
 ## Models:
 For this project, three different vectorizing techniques were implemented and tested against each other. In the Bag of Words model, word vectors are created using One-Hot Encoding which creates a sparse matrix where each document’s words are counted and represented in a matrix of all words in the corpus. The TF-IDF model vectorizes based on the product of the term frequency and the inverse document frequency to highlight words that appear infrequently but may illuminate some meaning in the document. The last model we used was the Python library Spacy’s GloVe (Global Vectors) embeddings. Each model was run through Logistic Regression, Naive Bayes, and Random Forest classifiers. Given the dataset’s even distribution of labels we considered 50% accuracy the baseline prediction. While all the models performed fairly well with scores in the high 80’s, we decided on the Spacy model as our final model with an accuracy score of 0.8954 and an F1 score of 0.8958.
