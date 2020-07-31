@@ -27,7 +27,7 @@ When charting the top twenty most frequent uni-grams in the negative and positiv
 ![](Unigram_pos.png)
 We gained much more insight looking at the bigram and trigram frequencies for the positive and negative reviews. For example, if we consider genres, the bi/tri-grams become very telling and can be related to movie market data. In the positive reviews “kung fu movie”, “base true story”, and “give good performance” correspond with the top 3 genres of adventure, action, and drama, according to total box office numbers from 1995-2020 (https://www.the-numbers.com/market/genres). Kung Fu movies are action/adventure heavy while many dramas are often based on true stories and are very focused on inter and intra personal relationships (which require great acting to sell the believability to an audience). On the opposite end we see word groups like, “horror movie”, “main character”, “sci fi channel”, and “bad act bad”. Sci-Fi movies are not even on the list of top grossing genres while horror movies, although they rank sixth, can obviously be a polarizing genre (as they’re usually meant to shock and disturb viewers). The fact that main character and bad acting show up in the negative reviews also gives credence to peoples’ desire to see “quality” acting which is often associated with dramas (just take a cursory glance at the genres of films that won Academy Awards for best actor). 
 ![](Bigram_neg.png)
-![](Bigram_.png)
+![](Bigram_pos.png)
 ![](Trigram_neg.png)
 ![](Trigram_pos.png)
 
