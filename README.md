@@ -1,4 +1,4 @@
-# mod_4_final_project
+# IMDb Sentiment Analysis
 
 ## Intro:
 Take this fundamental business premise: Customers have demands. Businesses supply customer demands. Therefore if a business can identify what customers like and dislike, that business can adjust the supply to maximize profits. Simple in theory, difficult in practice. Using Natural Language Processing (NLP) techniques on a collection of imdb movie reviews, this project seeks to classify the sentiment of these reviews as binary indicators of positive and negative reactions to a movie, and to bring to light features of the texts that would give insight into what one might deem “good” and “bad” movies.
